@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategrey;
+}
+
+.navtitle{
+    color:gold;
+    margin:10;
+}
+
+.navlinks{
+    justify-content: space-between;
+    display: flex;
+    margin:15;
+    gap:10;
+}
+
+.active{
+    color:cyan;
+    font-size: 19;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2;
+    border-bottom-style: solid;
+
+}
+.inactive:hover{
+    transform: scale(1.2);
+}
+
+.inactive{
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 18;
+     font-style: oblique;
+     font-weight: 600;
+     color:pink;
+     transition: transform 0.1s ease-in-out;
+}

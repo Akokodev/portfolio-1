@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+  background-image: url('/images/image5.png');
+}
+
+.header {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  text-align: center;
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.githubLink {
+  color: #0070f3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.githubLink:hover {
+  text-decoration: underline;
+}
+
+/* --- Grid Layout --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* --- Project Card --- */
+.card {
+  background: #111;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 112, 243, 0.4);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.desc {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* --- Tech Tags --- */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.techBadge {
+  background: #222;
+  border: 1px solid #0070f3;
+  color: #0070f3;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+/* --- Button --- */
+.linkButton {
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: #0059c9;
+}

@@ -1,95 +1,69 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { 
+  FaPython, 
+  FaReact 
+} from "react-icons/fa";
+import { 
+  SiC, 
+  SiCplusplus, 
+  SiNextdotjs, 
+  SiTypescript, 
+  SiJavascript 
+} from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className={styles.container}>
+      {/* --- HERO SECTION --- */}
+      <div className={styles.hero}> 
+        <Image 
+          src='/images/IMG20250414144434-1.jpg' 
+          alt='Profile photo' 
+          className={styles.image} 
+          width={100} 
+          height={100}
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <div className={styles.herosub}>
+          <h2 className={styles.herotextm}>Bulunga Wilson Mark</h2>
+          <h3 className={styles.herotext}>Computer Scientist</h3>
+          <h4 className={styles.herotext}>Ready for hiring</h4>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* --- DESCRIPTION SECTION --- */}
+      <div className={styles.divdesc}>
+        <h1>Grow your business,</h1>
+        <h2>master every move.</h2>
+        <h4>Helping businesses thrive with innovative digital strategies,</h4>
+        <h4>creative solutions, and measurable outcomes.</h4>
+        <button title="call" className={styles.button1}>Book a Call</button>
+        <button title="learn" className={styles.button2}>Learn More</button>
+      </div>
+
+      {/* --- SKILLS + VIDEO SECTION --- */}
+      <div className={styles.divbelow}>
+        <h2 className={styles.belowtxt}>Skills and Intro Video</h2>
+
+        {/* --- VIDEO --- */}
+        <video 
+          src="/me.mp4" 
+          controls 
+          className={styles.videosection}
+        />
+
+        {/* --- SKILLS ICONS --- */}
+        <div className={styles.skills}>
+          <FaPython className={styles.icon} title="Python" />
+          <FaReact className={styles.icon} title="React / React Native" />
+          <SiNextdotjs className={styles.icon} title="Next.js" />
+          <SiJavascript className={styles.icon} title="JavaScript" />
+          <SiTypescript className={styles.icon} title="TypeScript" />
+          <SiC className={styles.icon} title="C" />
+          <SiCplusplus className={styles.icon} title="C++" />
+        </div>
+      </div>
     </div>
   );
 }
